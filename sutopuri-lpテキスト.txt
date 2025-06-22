@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>すとぷり最新情報LP 🍓👑</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'stpr-pink': '#FF69B4', // Hot Pink
+            'stpr-pink-light': '#FFC0CB', // Pink
+            'stpr-red': '#DC143C', // Crimson
+            'stpr-red-light': '#FF6347', // Tomato
+            'stpr-gold': '#FFD700', // Gold
+            'stpr-blue': '#6495ED', // Cornflower Blue (for variety)
+            'stpr-purple': '#9370DB', // Medium Purple (for variety)
+          },
+          fontFamily: {
+            sans: ['"Helvetica Neue"', 'Arial', 'sans-serif'],
+            display: ['"M PLUS Rounded 1c"', 'sans-serif'], // A more playful font, ensure it's web safe or imported
+          },
+          animation: {
+            'bounce-slow': 'bounce 3s infinite',
+            'pulse-bg': 'pulse-bg 2s infinite',
+          },
+          keyframes: {
+            'pulse-bg': {
+              '0%, 100%': { backgroundColor: 'var(--tw-gradient-from)' },
+              '50%': { backgroundColor: 'var(--tw-gradient-to)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'M PLUS Rounded 1c', "Helvetica Neue", Arial, sans-serif;
+      color: #374151; /* text-gray-800 */
+    }
+    .hero-bg-overlay::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url('https://picsum.photos/seed/sutopuriPartyVibes/1600/900'); /* More vibrant placeholder */
+      background-size: cover;
+      background-position: center;
+      opacity: 0.3; /* Slightly reduced opacity to see image more */
+      z-index: 0;
+    }
+    .hero-bg-overlay::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(0deg, rgba(255,105,180,0.5) 0%, rgba(220,20,60,0.5) 100%); /* Pink/Red gradient overlay */
+        z-index: 1;
+    }
+    .hero-content {
+        position: relative;
+        z-index: 10;
+    }
+    .placeholder-image {
+      background-color: #e9e9e9;
+      border: 2px dashed #cccccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #888888;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body class="bg-stpr-pink-light/5">
+
+  <div class="min-h-screen flex flex-col font-display text-gray-800">
+    <main class="flex-grow">
+
+      <!-- Hero Section -->
+      <div class="relative bg-stpr-pink text-white overflow-hidden hero-bg-overlay">
+        <div class="relative min-h-[70vh] md:min-h-[85vh] flex flex-col justify-center items-center text-center p-6 sm:p-8 hero-content">
+          
+          <div class="placeholder-image w-48 h-48 sm:w-64 sm:h-64 rounded-full mb-6 sm:mb-8 shadow-2xl bg-white/20 border-stpr-gold border-4">
+            <span class="text-sm sm:text-lg p-2">👑 すとぷり 👑<br/>集合イメージ<br/>(ここに画像を挿入)</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 tracking-tight leading-tight text-shadow-lg">
+            すとぷりの<span class="text-stpr-gold animate-pulse">『今』</span>がわかる！<br class="sm:hidden"/>最新ニュースを<span class="text-stpr-red-light">ギュッ</span>と凝縮！🍓
+          </h1>
+          <p class="text-lg sm:text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed text-shadow-md">
+            2025年最新ベストアルバム発売！記念ライブでの重大発表まで、すとぷりの最新情報をお届けします。
+          </p>
+        </div>
+      </div>
+
+      <!-- BigNews Section -->
+      <section id="big-news" class="py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-center text-stpr-red mb-10 md:mb-16">
+            【<span class="text-stpr-gold">速報</span>】<span class="text-stpr-pink">初のベストアルバム発売</span>＆<span class="text-stpr-pink">記念ライブ</span>で重大発表！ 🥳
+          </h2>
+          
+          <div class="space-y-10 md:space-y-12">
+            <div class="p-6 md:p-8 bg-gradient-to-br from-stpr-pink-light/30 to-stpr-red-light/20 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+              <div class="flex flex-col md:flex-row items-center md:space-x-6">
+                <div class="placeholder-image w-40 h-40 md:w-48 md:h-48 rounded-lg mb-4 md:mb-0 flex-shrink-0">
+                  <span>🍓👑<br/>ベストアルバム<br/>『Strawberry Prince Forever』<br/>ジャケット画像</span>
+                </div>
+                <div>
+                  <h3 class="text-2xl lg:text-3xl font-semibold text-stpr-red mb-3">初のベストアルバム『Strawberry Prince Forever』発売！</h3>
+                  <p class="text-gray-700 leading-relaxed text-base lg:text-lg">
+                    2025年1月8日に、すとぷり初のベストアルバム『Strawberry Prince Forever』が発売されました！
+                    豪華4枚組で、これまでのすとぷりの輝かしい歴史が詰まった、まさに永久保存版のアルバムです。
+                    ファンならずとも必聴の一枚！🎶
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 md:p-8 bg-stpr-blue/10 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+              <h3 class="text-2xl lg:text-3xl font-semibold text-stpr-blue mb-3 text-center md:text-left">リリース記念ライブ大成功！🎤✨</h3>
+              <p class="text-gray-700 leading-relaxed text-base lg:text-lg text-center md:text-left">
+                さいたまスーパーアリーナでのリリース記念ライブが盛大に開催され、2日間でなんと<span class="font-bold text-stpr-pink text-xl">5万人</span>を動員！
+                会場は熱狂の渦に包まれ、伝説的なライブとなりました。
+              </p>
+            </div>
+
+            <div class="p-6 md:p-8 bg-stpr-purple/10 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+              <h3 class="text-2xl lg:text-3xl font-semibold text-stpr-purple mb-4 text-center">ライブでの<span class="text-stpr-gold">3つ</span>の重大発表！📣</h3>
+              <ul class="space-y-3 text-gray-700">
+                <li class="text-lg flex items-center"><span class="text-2xl mr-3">💖</span> 莉犬、るぅと、ころん、さとみのソロライブ開催決定</li>
+                <li class="text-lg flex items-center"><span class="text-2xl mr-3">🎬</span> ジェル原作のアニメ『遠井さん』映画化決定</li>
+                <li class="text-lg flex items-center"><span class="text-2xl mr-3">🎉</span> 所属事務所の合同ライブフェス『STPR Family Festival!!』の追加公演決定</li>
+              </ul>
+              <p class="text-gray-700 mt-4 leading-relaxed text-center text-base lg:text-lg">
+                これらの発表で、会場のボルテージは最高潮に！今後の活動からも目が離せません！🚀
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Highlights Section -->
+      <section id="highlights" class="py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-stpr-pink-light/40 to-stpr-red-light/40">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-center text-stpr-red mb-10 md:mb-16">
+            2024年からの<span class="text-stpr-pink animate-bounce-slow">快進撃</span>を振り返り！ 🌟
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+            <div class="p-6 bg-white rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105 flex flex-col items-center text-center">
+              <div class="placeholder-image w-full h-48 rounded-lg mb-4">
+                <span>🏆『はじまりの物語』<br/>関連イメージ 🏆</span>
+              </div>
+              <div class="w-16 h-16 bg-stpr-pink text-white flex items-center justify-center rounded-full text-3xl font-bold mb-4 shadow-md">
+                1<span class="text-xl">位</span>
+              </div>
+              <h3 class="text-2xl font-semibold text-stpr-red mb-3">1stシングル大ヒット！</h3>
+              <p class="text-gray-700 leading-relaxed">
+                2024年6月発売の1stシングル<span class="font-bold text-stpr-pink">『はじまりの物語』</span>が、オリコン週間シングルランキングで見事<span class="font-bold text-stpr-red">1位</span>を獲得！
+                すとぷりの新たな歴史の幕開けを飾りました。
+              </p>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105 flex flex-col items-center text-center">
+              <div class="placeholder-image w-full h-48 rounded-lg mb-4">
+                <span>🍓🎬 映画<br/>『はじまりの物語』<br/>キービジュアル 🍓🎬</span>
+              </div>
+               <div class="w-16 h-16 bg-stpr-red text-white flex items-center justify-center rounded-full text-3xl font-bold mb-4 shadow-md">
+                🎉
+              </div>
+              <h3 class="text-2xl font-semibold text-stpr-red mb-3">初のアニメ映画公開！</h3>
+              <p class="text-gray-700 leading-relaxed">
+                2024年7月には、すとぷり初のアニメ映画<span class="font-bold text-stpr-pink">『劇場版すとぷり はじまりの物語～Strawberry School Festival!!!～』</span>が公開！
+                多くのファンを感動の渦に巻き込みました。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AboutSutopuri Section -->
+      <section id="about" class="py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-stpr-pink mb-6">
+            すとぷり (Strawberry Prince) とは？ <span class="text-stpr-gold">👑</span>
+          </h2>
+          <div class="placeholder-image w-full max-w-lg h-64 mx-auto rounded-lg mb-8 shadow-lg">
+            <span>🍓 すとぷりメンバー 🍓<br/>活動イメージ画像</span>
+          </div>
+          <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-10 leading-relaxed">
+            リーダーのななもり。を中心に結成された6人組の2.5次元アイドルグループ。
+            YouTubeやツイキャスなどの動画配信サイトを中心に活動し、個性豊かなメンバーたちが織りなす「楽しい」で世界中を笑顔にしています！😊
+          </p>
+          
+          <h3 class="text-2xl font-semibold text-stpr-red mb-8">公式情報をチェック！ 📡</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 max-w-3xl mx-auto">
+            <a href="https://strawberryprince.com/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center text-sm sm:text-base font-semibold py-3 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stpr-gold focus:ring-opacity-50 bg-stpr-pink hover:bg-stpr-red text-white">
+              <span class="mr-2 h-5 w-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                </svg>
+              </span>
+              公式サイト
+            </a>
+            <a href="https://www.youtube.com/channel/UCFq5S0QJ_O_T-22goD1n34A" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center text-sm sm:text-base font-semibold py-3 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stpr-gold focus:ring-opacity-50 bg-stpr-pink hover:bg-stpr-red text-white">
+              <span class="mr-2 h-5 w-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+                  <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.411 0 5.825 0 12s.488 8.589 4.385 8.816c3.6.245 11.626.246 15.23 0C23.512 20.589 24 18.175 24 12s-.488-8.589-4.385-8.816zM9.75 15.562V8.438L15.812 12 9.75 15.562z" />
+                </svg>
+              </span>
+              YouTube
+            </a>
+            <a href="https://twitter.com/StPri_info" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center text-sm sm:text-base font-semibold py-3 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stpr-gold focus:ring-opacity-50 bg-stpr-pink hover:bg-stpr-red text-white">
+              <span class="mr-2 h-5 w-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+              </span>
+              公式X
+            </a>
+            <a href="https://www.tiktok.com/@stprinfo" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center text-sm sm:text-base font-semibold py-3 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stpr-gold focus:ring-opacity-50 bg-stpr-pink hover:bg-stpr-red text-white">
+              <span class="mr-2 h-5 w-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+                  <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.59v3.01c-1.47.04-2.89-.36-4.02-1.25-.011-.745-.27-1.47-.63-2.1-.4-.6-.94-1.1-1.58-1.48-.64-.38-1.37-.58-2.12-.6-.026.97-.026 1.94 0 2.91.55.07 1.09.28 1.58.58.49.3.92.73 1.25 1.25.33.52.54 1.13.58 1.78.03.65-.1 1.29-.38 1.88-.28.59-.7 1.1-1.25 1.53-.55.43-1.2.73-1.88.88-.67.15-1.36.14-2.03.02-.68-.13-1.31-.43-1.84-.88-.53-.45-.96-.99-1.25-1.63-.3-.63-.42-1.33-.38-2.03.04-.68.25-1.33.63-1.88.38-.55.88-.98 1.48-1.25.6-.28 1.28-.38 1.94-.33V9.58c-.59.05-1.16.27-1.66.63-.5.35-.91.82-1.2 1.38-.3.55-.44 1.19-.41 1.83.03.63.22 1.23.58 1.75.35.53.81.93 1.34 1.2.54.28 1.14.4 1.75.38.61-.01 1.2-.18 1.71-.48.51-.3.93-.73 1.23-1.25.3-.51.48-1.1.48-1.71s-.18-1.2-.48-1.71c-.29-.51-.72-.93-1.23-1.23a2.95 2.95 0 00-1.7-.48c-.01-.96-.01-1.93 0-2.89.68.02 1.34-.12 1.93-.48.59-.35 1.08-.88 1.38-1.53.3-.64.4-1.38.33-2.12Z"/>
+                </svg>
+              </span>
+              公式TikTok
+            </a>
+            <a href="https://www.instagram.com/stprinfo/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center text-sm sm:text-base font-semibold py-3 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stpr-gold focus:ring-opacity-50 bg-stpr-pink hover:bg-stpr-red text-white">
+              <span class="mr-2 h-5 w-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.802C9.042 3.965 8.73 3.974 7.502 4.027c-2.522.115-3.611 1.104-3.716 3.716-.054 1.228-.063 1.539-.063 4.257s.009 3.03.063 4.257c.105 2.613 1.194 3.602 3.716 3.716 1.228.054 1.539.063 4.257.063s3.03-.009 4.257-.063c2.522-.115 3.611-1.104 3.716-3.716.054-1.228.063-1.539.063-4.257s-.009-3.03-.063-4.257c-.105-2.613-1.194-3.602-3.716-3.716-1.228-.054-1.539-.063-4.257-.063zm0 2.882c-1.955 0-3.525 1.57-3.525 3.525s1.57 3.525 3.525 3.525 3.525-1.57 3.525-3.525S13.955 6.847 12 6.847zm0 5.253c-1.002 0-1.812-.81-1.812-1.812s.81-1.812 1.812-1.812 1.812.81 1.812 1.812-.81 1.812-1.812 1.812zm4.569-6.217c0 .748-.606 1.354-1.354 1.354s-1.354-.606-1.354-1.354.606-1.354 1.354-1.354 1.354.606 1.354 1.354z"/>
+                </svg>
+              </span>
+              公式Instagram
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Closing Section -->
+      <section id="closing" class="py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-tr from-stpr-red to-stpr-pink text-white">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
+              これからも<span class="text-stpr-gold animate-pulse">「楽しい」</span>を届けるすとぷりから目が離せない！💖✨
+            </h2>
+            <p class="text-lg md:text-xl leading-relaxed max-w-xl mx-auto">
+              最新情報は公式サイトやSNSでチェックして、すとぷりと一緒に最高の瞬間を共有しよう！
+            </p>
+            <div class="mt-10">
+              <a
+                href="#about"
+                class="inline-block bg-stpr-gold text-stpr-red font-bold py-4 px-10 rounded-full text-lg hover:bg-yellow-300 transition-colors duration-300 shadow-xl transform hover:scale-110 hover:rotate-3"
+              >
+                公式情報をもっと見る！🚀
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center">
+      <p class="text-sm">
+        © <span id="currentYear"></span> すとぷりNEWS ❤️ Fan-Made LP.
+      </p>
+      <p class="text-xs mt-1 text-gray-400">
+        This is a conceptual landing page created based on a prompt for demonstration.
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
